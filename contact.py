@@ -56,8 +56,8 @@ def contact():
 
 
 
-print("✅ Flask backend plik został uruchomiony!")
-print("Ścieżka SMTP_USER:", SMTP_USER)
+#print("✅ Flask backend plik został uruchomiony!")
+#print("Ścieżka SMTP_USER:", SMTP_USER)
 
 # Usuń poniższe linie:
 # if __name__ == "__main__":
