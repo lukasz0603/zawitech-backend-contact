@@ -53,8 +53,8 @@ def contact():
         print("❌ Wystąpił błąd:", e)  # <-- pokaże błąd w terminalu
         return jsonify({"error": "Internal server error"}), 500
 
-##if __name__ == "__main__":
-##    app.run(debug=True)
+if __name__ == "__main__":
+   app.run(debug=True)
 
 
 
