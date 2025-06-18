@@ -18,9 +18,9 @@ app = Flask(__name__)
 CORS(app)  # Umożliwia komunikację z frontem
 
 
- ## @app.route("/")
- ## def home():
- ##   return "✅ Zawitech API działa poprawnie!"
+ @app.route("/")
+ def home():
+   return "✅ Zawitech API działa poprawnie!"
 
 @app.route("/contact", methods=["POST"])
 def contact():
