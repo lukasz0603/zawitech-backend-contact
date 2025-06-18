@@ -11,8 +11,6 @@ from dotenv import load_dotenv
 
 load_dotenv()  # wczytuje plik .env
 
-print("✅ Flask backend plik został uruchomiony!")
-print("Ścieżka SMTP_USER:", SMTP_USER)
 
 SMTP_USER = os.getenv("SMTP_USER")
 SMTP_PASS = os.getenv("SMTP_PASS")
@@ -55,6 +53,11 @@ def contact():
     except Exception as e:
         print("❌ Wystąpił błąd:", e)  # <-- pokaże błąd w terminalu
         return jsonify({"error": "Internal server error"}), 500
+
+
+
+print("✅ Flask backend plik został uruchomiony!")
+print("Ścieżka SMTP_USER:", SMTP_USER)
 
 # Usuń poniższe linie:
 # if __name__ == "__main__":
