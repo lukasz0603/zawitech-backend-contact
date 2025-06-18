@@ -1,3 +1,7 @@
+@app.route("/", methods=["GET"])
+def home():
+    return "✅ Zawitech backend działa!", 200
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import smtplib
