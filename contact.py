@@ -1,3 +1,5 @@
+print("✅ Flask backend plik został uruchomiony!")
+print("Ścieżka SMTP_USER:", SMTP_USER)
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
